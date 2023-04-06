@@ -4,12 +4,18 @@
   "description": "Este es un API básico construido con Node y Express para manejar una lista de productos. Los productos se almacenan en un archivo JSON y se utilizan la clase Producto para crear y manipular los objetos de producto.",
   "main": "index.js",
   "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.20.2",
     "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
   }
 }
