@@ -1,0 +1,12 @@
+{
+  "name": "01",
+  "version": "1.0.0",
+  "description": "Este es un API básico construido con Node y Express para manejar una lista de productos. Los productos se almacenan en un archivo JSON y se utilizan la clase Producto para crear y manipular los objetos de producto.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
