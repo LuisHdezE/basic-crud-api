@@ -1,9 +1,11 @@
 const express = require("express");
 const bodyParser = require("body-parser");
+const fs = require("fs");
 
 const Producto = require("./model/producto");
 
-let listaProductos = [];
+const datos = fs.readFileSync("./data/db.json", "utf-8");
+const listaProductos = JSON.parse(datos);
 
 const app = express();
 
@@ -14,11 +16,11 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.get("/", (req, res) => {
-  res.send(listaProductos);
+  res.send(listaProductos.productos);
 });
 app.get("/:codigo", (req, res) => {
   // Buscar el producto en la lista de productos
-  const productoEncontrado = listaProductos.find(
+  const productoEncontrado = listaProductos.productos.find(
     (producto) => producto.codigo === req.params.codigo
   );
 
@@ -51,23 +53,23 @@ app.post("/", (req, res) => {
   );
 
   //adicionamos los valores a la lista
-  listaProductos.push(product);
+  listaProductos.productos.push(product);
 
   console.log(` Se creo un nuevo producto con el codigo ${req.body.codigo}`);
   res.send(product);
 });
 app.put("/:codigo", (req, res) => {
-  const index = listaProductos.findIndex(
+  const index = listaProductos.productos.findIndex(
     (producto) => producto.codigo === req.params.codigo
   );
   if (index !== -1) {
-    listaProductos[index].codigo = req.body.codigo;
-    listaProductos[index].nombre = req.body.nombre;
-    listaProductos[index].descripcion = req.body.descripcion;
-    listaProductos[index].precio = req.body.precio;
-    listaProductos[index].costo = req.body.costo;
-    listaProductos[index].stock = req.body.stock;
-    console.log("Producto actualizado:", listaProductos[index]);
+    listaProductos.productos[index].codigo = req.body.codigo;
+    listaProductos.productos[index].nombre = req.body.nombre;
+    listaProductos.productos[index].descripcion = req.body.descripcion;
+    listaProductos.productos[index].precio = req.body.precio;
+    listaProductos.productos[index].costo = req.body.costo;
+    listaProductos.productos[index].stock = req.body.stock;
+    console.log("Producto actualizado:", listaProductos.productos[index]);
     res.send("Producto actualizado:");
   } else {
     console.log("Producto no encontrado");
@@ -75,7 +77,7 @@ app.put("/:codigo", (req, res) => {
   }
 });
 app.delete("/:codigo", (req, res) => {
-  listaProductos = listaProductos.filter(
+  listaProductos.productos = listaProductos.productos.filter(
     (producto) => producto.codigo !== req.params.codigo
   );
   res.send(` Se elimino el producto con el codigo ${req.params.codigo}`);
