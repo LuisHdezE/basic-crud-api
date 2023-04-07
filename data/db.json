@@ -1,0 +1,84 @@
+{
+  "productos": [
+    {
+      "codigo": "001",
+      "nombre": "Laptop Dell Inspiron 15",
+      "precio": 789.99,
+      "costo": 589.99,
+      "descripcion": "Laptop de 15 pulgadas con procesador Intel Core i5, 8GB de RAM y 512GB de almacenamiento SSD",
+      "stock": 20
+    },
+    {
+      "codigo": "002",
+      "nombre": "Monitor LG 27 pulgadas",
+      "precio": 329.99,
+      "costo": 259.99,
+      "descripcion": "Monitor IPS de 27 pulgadas con resolución Full HD y conexión HDMI",
+      "stock": 10
+    },
+    {
+      "codigo": "003",
+      "nombre": "Impresora HP OfficeJet Pro",
+      "precio": 199.99,
+      "costo": 149.99,
+      "descripcion": "Impresora todo-en-uno con funciones de impresión, escaneo, copiado y fax, compatible con WiFi y Ethernet",
+      "stock": 5
+    },
+    {
+      "codigo": "004",
+      "nombre": "Altavoces Bose SoundLink Mini II",
+      "precio": 199.99,
+      "costo": 149.99,
+      "descripcion": "Altavoces inalámbricos Bluetooth con sonido potente y graves profundos, batería de hasta 10 horas de duración",
+      "stock": 15
+    },
+    {
+      "codigo": "005",
+      "nombre": "Cámara Canon EOS Rebel T7",
+      "precio": 599.99,
+      "costo": 499.99,
+      "descripcion": "Cámara réflex digital con sensor CMOS de 24.1 megapíxeles, lente EF-S 18-55mm y grabación de video Full HD",
+      "stock": 8
+    },
+    {
+      "codigo": "006",
+      "nombre": "Tablet Samsung Galaxy Tab S7",
+      "precio": 549.99,
+      "costo": 449.99,
+      "descripcion": "Tablet de 11 pulgadas con resolución 2560x1600, procesador Snapdragon 865+, 6GB de RAM y 128GB de almacenamiento",
+      "stock": 12
+    },
+    {
+      "codigo": "007",
+      "nombre": "Teclado mecánico Logitech G Pro",
+      "precio": 129.99,
+      "costo": 89.99,
+      "descripcion": "Teclado mecánico para juegos con switches GX Blue, retroiluminación RGB y diseño compacto sin teclado numérico",
+      "stock": 18
+    },
+    {
+      "codigo": "008",
+      "nombre": "Mouse inalámbrico Microsoft Surface",
+      "precio": 79.99,
+      "costo": 49.99,
+      "descripcion": "Mouse inalámbrico con conectividad Bluetooth y USB, diseño ergonómico para diestros y zurdos",
+      "stock": 25
+    },
+    {
+      "codigo": "009",
+      "nombre": "Auriculares Sony WH-1000XM4",
+      "precio": 349.99,
+      "costo": 299.99,
+      "descripcion": "Auriculares inalámbricos con cancelación de ruido, hasta 30 horas de batería y sonido de alta calidad",
+      "stock": 7
+    },
+    {
+      "codigo": "010",
+      "nombre": "Smartwatch Apple Watch Series 7",
+      "precio": 399.99,
+      "costo": 329.99,
+      "descripcion": "Smartwatch con pantalla Retina siempre activa, resistencia al agua y seguimiento avanzado de actividad física",
+      "stock": 3
+    }
+  ]
+}
