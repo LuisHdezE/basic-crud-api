@@ -39,11 +39,13 @@ Ejemplo de objeto Producto
 
 ```Copy code
 {
-  "codigo":"75846314",
-  "nombre": "Camiseta",
-  "precio": 20,
-  "descripcion": "Camiseta de algodón"
-} 
+      "codigo": "001",
+      "nombre": "Laptop Dell Inspiron 15",
+      "precio": 789.99,
+      "costo": 589.99,
+      "descripcion": "Laptop de 15 pulgadas con procesador Intel Core i5, 8GB de RAM y 512GB de almacenamiento SSD",
+      "stock": 20
+    } 
 ```
 
 ## Contribución
